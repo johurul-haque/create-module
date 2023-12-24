@@ -11,8 +11,12 @@
   "keywords": [
     "express",
     "typescript",
-    "module"
+    "modular pattern"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "repository": "https://github.com/johurul-haque/write-module"
+  },
   "author": "Johurul Haque",
   "license": "MIT",
   "dependencies": {
