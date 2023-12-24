@@ -14,5 +14,8 @@
     "module"
   ],
   "author": "Johurul Haque",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ora": "^8.0.1"
+  }
 }
