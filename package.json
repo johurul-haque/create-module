@@ -1,6 +1,6 @@
 {
   "name": "write-module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CLI tool for quickly generating necessary files for an Express application following the modular pattern.",
   "main": "index.js",
   "type": "module",
