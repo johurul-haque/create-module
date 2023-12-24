@@ -1,6 +1,6 @@
 # write-module 
 
-Create modular structure for Express TypeScript app.
+If you are using modular pattern for an express application, each module in the modules directory needs to have at least **five** files (controller, route, service, interface, model). This package is a CLI tool to easily create that files.
 
 ## Install globally
 
@@ -8,25 +8,25 @@ Create modular structure for Express TypeScript app.
 npm install -g write-module 
 ```
 
-## Basic Usage
-To create a new module, run the following command:
+## Usage
 
 ```bash
- write-module <module-name>
+ write-module hello-world
 ```
-- `<module-name>`: Specify the name of the module.
-
-- `[target-directory]` (optional): Specifies the target directory where the module will be created. Default is set to `src/modules`.
-
-## Examples
-Create a module named **foo** in the default directory:
+This command will create a directory named `hello-world` with the following files in `src/modules` directory.
 
 ```bash
- write-module foo
+├── user.interface.ts
+├── user.route.ts
+├── user.controller.ts
+├── user.model.ts
+└── user.service.ts
 ```
 
-Create a module named **bar** in the `src/bar` directory:
+You can change the output directory path by using the following command
 
 ```bash
- write-module bar src/bar
+write-module hello-world src/app/modules
 ```
+
+Now the directory with the file will be created in `src/app/modules`
