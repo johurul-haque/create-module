@@ -1,19 +1,18 @@
-# create-module
+# write-module 
 
 Create modular structure for Express TypeScript app.
 
 ## Install globally
 
 ```bash
-npm install -g create-module
+npm install -g write-module 
 ```
-Or you can run the executable using `npx`
 
 ## Basic Usage
 To create a new module, run the following command:
 
 ```bash
-create-module <module-name>
+ write-module <module-name>
 ```
 - `<module-name>`: Specify the name of the module.
 
@@ -23,11 +22,11 @@ create-module <module-name>
 Create a module named **foo** in the default directory:
 
 ```bash
-create-module foo
+ write-module foo
 ```
 
 Create a module named **bar** in the `src/bar` directory:
 
 ```bash
-create-module bar src/bar
+ write-module bar src/bar
 ```
