@@ -1,19 +1,19 @@
 # write-module 
 
-If you are using modular pattern for an express application, each module in the modules directory needs to have at least **five** files (controller, route, service, interface, model). This package is a CLI tool to easily create that files.
+If you use the modular pattern for an express application, each module in the modules directory needs to have at least **five** files (controller, route, service, interface, model). This package is a CLI tool to create those files easily.
 
 ## Install globally
 
 ```bash
-npm install -g write-module 
+$ npm install -g write-module 
 ```
 
 ## Usage
 
 ```bash
- write-module hello-world
+$ write-module hello-world
 ```
-This command will create a directory named `hello-world` with the following files in `src/modules` directory.
+This command will create a `hello-world` directory with the following files in the `src/modules` directory.
 
 ```bash
 ├── user.interface.ts
@@ -26,7 +26,7 @@ This command will create a directory named `hello-world` with the following file
 You can change the output directory path by using the following command
 
 ```bash
-write-module hello-world src/app/modules
+$ write-module hello-world src/app/modules
 ```
 
 Now the directory with the file will be created in `src/app/modules`
