@@ -37,7 +37,7 @@ try {
     );
   });
 
-  spinner.succeed(`${moduleName} created successfully`);
+  spinner.succeed(`Module ${moduleName} created successfully`);
 } catch (error) {
   spinner.fail(`Error creating module: ${error.message}`);
   process.exit(1);
