@@ -11,14 +11,15 @@
   "keywords": [
     "express",
     "typescript",
-    "modular pattern"
+    "modular pattern",
+    "modules"
   ],
-  "publishConfig": {
-    "repository": "https://github.com/johurul-haque/write-module"
+  "repository": {
+    "url": "https://github.com/johurul-haque/write-module"
   },
   "author": "Johurul Haque",
   "license": "MIT",
   "dependencies": {
-    "ora": "^8.0.1"
+    "nanospinner": "^1.1.0"
   }
 }

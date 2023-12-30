@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import fs from 'fs';
-import ora from 'ora';
+import { createSpinner } from 'nanospinner';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -20,9 +20,11 @@ if (fs.existsSync(modulePath)) {
   process.exit(1);
 }
 
-const spinner = ora(`Creating module ${moduleName}`).start();
+const spinner = createSpinner(`Creating module ${moduleName}`);
 
 try {
+  spinner.start({ color: 'blue' });
+
   fs.mkdirSync(modulePath);
 
   const templatePath = path.join(
@@ -37,8 +39,10 @@ try {
     );
   });
 
-  spinner.succeed(`Module ${moduleName} created successfully`);
+  spinner.success({
+    text: `Success! Module ${moduleName} created in ${targetDirectory}`,
+  });
 } catch (error) {
-  spinner.fail(`Error creating module: ${error.message}`);
+  spinner.error(`Error creating module: ${error.message}`);
   process.exit(1);
 }
