@@ -40,7 +40,7 @@ try {
   });
 
   spinner.success({
-    text: `Success! Module ${moduleName} created in ${targetDirectory}`,
+    text: `Module ${moduleName} created successfully`,
   });
 } catch (error) {
   spinner.error(`Error creating module: ${error.message}`);
