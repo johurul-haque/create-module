@@ -1,6 +1,3 @@
-/* 
-import { Router } from 'express'
-import {} from './foo.controller';
+import { Router } from 'express';
 
-const router = Router(); 
-*/
+const router = Router();
